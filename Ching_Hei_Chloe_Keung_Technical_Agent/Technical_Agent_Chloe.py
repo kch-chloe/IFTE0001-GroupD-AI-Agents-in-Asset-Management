@@ -350,10 +350,7 @@ Instructions:
 - Comment on risk-adjusted returns, drawdowns, and regime suitability.
 - Maintain an academic yet practitioner-oriented tone.
 
-This is my strategy: trend_entry when there is trend regime (i.e., when SMA50 > SMA200) , ADX is between 19 and 30,
-MACD Histogram is greater than -0.025 and when RSI (14) is not less than 35 and less than 69.
-On the other hand, the trend_exit when the trend is break (i.e., when SMA 50 <= SMA 200) or ADX is not greater than 19
-or MACD Histogram is below -0.025, and RSI (14) is larger than 70.
+This is my strategy: trend_entry when there is trend regime (i.e., when SMA50 > SMA200) , ADX is between 19 and 30, MACD Histogram is greater than -0.025 and when RSI (14) is not less than 35 and less than 69. On the other hand, the trend_exit when the trend is break (i.e., when SMA 50 <= SMA 200) or when ADX is not greater than 19 and MACD Histogram is below -0.025, or when RSI (14) is larger than 70.
 
 1) Market regime assessment
 2) Explanation of indicator confluence
@@ -384,18 +381,18 @@ EXPECTED JSON STRUCTURE:
     "Rationale": "Detail justification. If there is a trend, but it is recommended to sell, please explain the exit logic clearly. Detail why one of the criteria can trigger for exit to ensure that it is not a early exit."
   }},
   "Strategy": {{
-    "Overview": "Max 300 words explaining why the strategy generates this signal.",
-    "Indicators_used": "Describe SMA, RSI, MACD, ADX, and regime logic."
+    "Overview": "Max 300 words. Explain the strategy logic clearly by separating entry rules, exit rules, and how the current market state maps to the recommendation.",
+    "Indicators_used": "Describe SMA, RSI, MACD, ADX, and regime logic. First explain what each indicator measures in general, then interpret the current values and what they imply for current signal."
   }},
   "Backtest_summary": {{
     "Key_metrics": "CAGR, Sharpe ratio, maximum drawdown, hit rate.",
-    "Performance_interpretation": "Max 200 words interpreting results relative to Buy & Hold. Also, please mention the backtesting period i.e. the evaluation period. Detail 100 worss in explaning why the agent download more than 10 years raw data and then evaluate for exactly 10 years"
+    "Performance_interpretation": " MAx 200 words interpreting results relative to Buy & Hold. Also, please mention the backtesting period i.e. the evaluation period. Detail 100 worss in explaning why the agent download more than 10 years raw data and then evaluate for exactly 10 years."
   }},
   "Limitations_and_risks": {{
-    "Discussion": "Around 100 words discussing weaknesses and risks. Also, evaluate the risk of using adjusted closed price for backtest."
+    "Discussion": "Max 200 words discussing weaknesses, risks, and portfolio insights. Explain why the backtest is conducted using both Close and Adjusted Close prices, and justify what is the risk of the Adjusted Close results that are used for evaluation."
   }},
   "Future_refinements": {{
-    "Discussion": "Around 200 words outlining future improvements."
+    "Discussion": "Max 200 words outlining future improvements, for example: walk-forward validation, and multiple indicators."
   }}
 }}
 """.strip()
