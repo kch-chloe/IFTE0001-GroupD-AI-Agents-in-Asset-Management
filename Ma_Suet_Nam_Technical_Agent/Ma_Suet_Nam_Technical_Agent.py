@@ -29,7 +29,7 @@ except Exception:
     DOCX_OK = False
 
 RUN_TS = datetime.now().strftime("%Y%m%d_%H%M%S")
-ROOT = Path("..") / "OUTPUT" / f"KO_TECH_AGENT_{RUN_TS}"
+ROOT = Path(".") / "OUTPUT" / f"KO_TECH_AGENT_{RUN_TS}"
 
 DIRS = {
     "root": ROOT,
