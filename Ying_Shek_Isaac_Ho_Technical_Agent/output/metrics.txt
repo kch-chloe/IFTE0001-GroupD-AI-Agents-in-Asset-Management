@@ -1,0 +1,25 @@
+=== Metrics (Virtual Capital) ===
+                       start: 2016-01-15
+                         end: 2026-01-14
+                        bars: 2514
+              initial_equity: 1.0000
+                final_equity: 1.7039
+                  num_trades: 74
+                    win_rate: 0.7568
+               profit_factor: 4.3273
+                       avg_R: 0.7661
+                        CAGR: 0.0548
+                      Sharpe: 0.7182
+                 MaxDrawdown: -0.1022
+                    risk_pct: 0.0100
+             max_open_trades: unlimited
+           fractional_shares: True
+    observed_max_open_trades: 11
+       observed_max_leverage: 1.9436
+                     atr_len: 100
+                 sl_atr_mult: 4.0000
+                          rr: 1.4000
+                slippage_bps: 0.0000
+          dist_threshold_pct: 0.5000
+     candle_height_limit_pct: 2.0000
+             commission_rate: 0.0000
